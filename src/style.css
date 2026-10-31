@@ -136,7 +136,6 @@ code, .mono { font-family: var(--mono); }
 /* Examples */
 .examples { background: var(--band); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .examples > .wrap { padding-top: clamp(96px, 10vw, 128px); padding-bottom: clamp(96px, 11vw, 144px); }
-.examples-intro { margin-top: 40px; color: var(--text2); max-width: 52ch; }
 .lang { font-size: 15px; font-weight: 600; padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); }
 .lang:first-of-type { margin-top: 96px; }
 .ex { border-top: 1px solid var(--line); padding: 80px 0; }

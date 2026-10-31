@@ -67,7 +67,7 @@
 <div class="tile-head">
 <div>
 <h3 id="hh-h">Hanzo Health</h3>
-<p>A privacy-first wellness journal for iPhone, iPad and Apple Watch, built for people living with chronic conditions like PCOS and endometriosis.</p>
+<p>A wellness journal for iPhone, iPad and Apple Watch, for people with chronic conditions like PCOS and endometriosis.</p>
 </div>
 <p class="figure-stat"><b>350</b><span>users</span></p>
 </div>
@@ -96,7 +96,7 @@
 <li>Verifier with a trust registry</li>
 </ul>
 <p class="stat-inline"><b>660</b><span>synthetic tests, plus senior and security review</span></p>
-<p class="tile-note">A synthetic MVP and pilot foundation. It makes no production or government claims.</p>
+<p class="tile-note">A synthetic MVP and pilot foundation.</p>
 </article>
 
 </div>
@@ -105,7 +105,6 @@
 <section id="examples" class="examples" aria-labelledby="ex-h">
 <div class="wrap">
 <h2 id="ex-h" class="section-title">Examples</h2>
-<p class="examples-intro">All illustrative. Fixed or mock data only.</p>
 
 <h3 class="lang">Swift, on the device</h3>
 
@@ -128,7 +127,7 @@
 </figure>
 <div class="notes">
 <div class="note"><p>What it proves</p><p>Typed HealthKit units instead of loose doubles, and a SwiftUI view VoiceOver reads as one element instead of two fragments.</p></div>
-<div class="note"><p>What it does not do</p><p>No query, no permission prompt, no device read. 72 BPM is a constant.</p></div>
+<div class="note"><p>What it does not do</p><p>No query, no permission prompt, no device read.</p></div>
 </div>
 </article>
 
@@ -136,7 +135,7 @@
 <div class="main">
 <span class="chip chip-illustrative">Illustrative · sample values only</span>
 <h4 id="ex3-h">Weekly snapshot</h4>
-<p class="ex-why">Rewritten from scratch for this page. Inspired by the shared snapshot model Hanzo Health uses across the app, the Watch app and the widgets.</p>
+<p class="ex-why">Inspired by the shared snapshot model Hanzo Health uses across the app, the Watch app and the widgets.</p>
 <figure class="code">
 <figcaption><span>Rewritten for this page</span><span>Swift, {{lines:snap}} lines</span></figcaption>
 <pre><code>{{code:snap}}</code></pre>
@@ -154,7 +153,7 @@
 <p>One model shape, no server in between</p>
 </div>
 <div class="note"><p>What it proves</p><p>Aggregation done on-device, in a model shape shareable across targets, with no server involved.</p></div>
-<div class="note"><p>What it does not do</p><p>No HealthKit query, no network, sample values only.</p></div>
+<div class="note"><p>What it does not do</p><p>No HealthKit query, no network.</p></div>
 </aside>
 </article>
 
@@ -165,7 +164,7 @@
 <span class="chip chip-illustrative">Illustrative · mock signature result</span>
 <h4 id="ex2-h">Credential precheck</h4>
 <div class="note"><p>What it proves</p><p>The four gates a verifier passes before trusting anything: signature, trusted issuer, an expiry that actually parses, then the clock. The clock is injectable, so the check is testable.</p></div>
-<div class="note"><p>What it does not do</p><p>No cryptography. The mock flag stands in for the real check. The issuer sits on <code>.invalid</code>, a domain reserved so it never resolves.</p></div>
+<div class="note"><p>What it does not do</p><p>No cryptography. The issuer sits on <code>.invalid</code>, a domain reserved so it never resolves.</p></div>
 <a class="ex-link" href="https://github.com/quielorodriguez/quielorodriguez/blob/main/examples/demo-credential-precheck.ts">Read the file on GitHub</a>
 </div>
 <figure class="code">
@@ -179,7 +178,7 @@
 <header>
 <span class="chip chip-illustrative">Illustrative · every check is a stand-in</span>
 <h4 id="ex4-h">Verifier gates</h4>
-<p class="ex-why">Rewritten from scratch for this page. Inspired by the verifier service in the credential work, which enforces its checks in a fixed order.</p>
+<p class="ex-why">Inspired by the verifier service in the credential work, which enforces its checks in a fixed order.</p>
 </header>
 <ol class="gates" aria-label="Gate order">
 <li><p>Gate 1</p><p>Purpose</p><p>"purpose not allowed"</p></li>
@@ -194,7 +193,7 @@
 </figure>
 <div class="notes">
 <div class="note"><p>What it proves</p><p>Fail-fast ordered verification, purpose binding, replay protection via a single-use nonce, revocation handling, and minimal disclosure.</p></div>
-<div class="note"><p>What it does not do</p><p>No cryptography, no real issuer, no real credential format. Every check is a stand-in.</p></div>
+<div class="note"><p>What it does not do</p><p>No cryptography, no real issuer, no real credential format.</p></div>
 </div>
 </article>
 
@@ -202,7 +201,7 @@
 <div class="main">
 <span class="chip chip-illustrative">Illustrative · not the real lifecycle engine</span>
 <h4 id="ex5-h">Lifecycle transitions</h4>
-<p class="ex-why">Rewritten from scratch for this page. Inspired by the issuance and lifecycle orchestration in the credential work.</p>
+<p class="ex-why">Inspired by the issuance and lifecycle orchestration in the credential work.</p>
 <div class="scroll">
 <table>
 <caption>Allowed transitions, from row to column</caption>
@@ -216,8 +215,8 @@
 </table>
 </div>
 <div class="stack">
-<div class="note"><p>What it proves</p><p>Domain modeling with fail-closed terminal states. Revoked and expired have no exits.</p></div>
-<div class="note"><p>What it does not do</p><p>Not the real lifecycle engine, no persistence, no real events.</p></div>
+<div class="note"><p>What it proves</p><p>Domain modeling with fail-closed terminal states: revoked and expired transition nowhere.</p></div>
+<div class="note"><p>What it does not do</p><p>No persistence, no real events.</p></div>
 </div>
 </div>
 <figure class="code">
@@ -234,7 +233,7 @@
 <figure>
 {{calendar}}
 <figcaption>
-<span>{{total}}Counts only. No repo names, no commit messages.</span>
+<span>{{total}}</span>
 <span class="legend" aria-hidden="true">Less<i></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i>More</span>
 </figcaption>
 </figure>
@@ -251,7 +250,7 @@
 <section class="side-projects" aria-labelledby="side-h">
 <div class="wrap">
 <h2 id="side-h">Side projects</h2>
-<p>Surf-Tracker (Swift), Regimen (Swift), Calyra, plus a fitness app and a rabbit tracker from earlier experiments. Some archived, all part of learning to ship.</p>
+<p>Surf-Tracker (Swift), Regimen (Swift), Calyra, plus a fitness app and a rabbit tracker from earlier experiments. Some archived.</p>
 </div>
 </section>
 
@@ -274,7 +273,6 @@
 <footer class="site-footer">
 <div class="wrap">
 <span>© 2026 Quielo Rodriguez</span>
-<span>A static page on GitHub Pages. No cookies, no trackers.</span>
 </div>
 </footer>
 

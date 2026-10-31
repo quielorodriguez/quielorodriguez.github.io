@@ -74,7 +74,7 @@ function calendar() {
   }
   const monthRow = months.map((m) => `<span style="grid-column: ${m.w + 1}">${m.name}</span>`).join("");
   return {
-    total: `${total.toLocaleString("en-US")} contributions in the last year. `,
+    total: `${total.toLocaleString("en-US")} contributions in the last year.`,
     html: `<div class="scroll">
 <div class="cal" role="img" aria-label="GitHub contribution calendar for the last 12 months, ${total.toLocaleString("en-US")} contributions">
 <div class="cal-days" aria-hidden="true"><span></span><span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span></div>
