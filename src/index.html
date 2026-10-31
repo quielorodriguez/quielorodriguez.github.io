@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quielo Rodriguez — iOS &amp; Identity Engineer Portfolio</title>
+<meta name="description" content="Quielo Rodriguez, iOS and identity engineer in Vancouver and founder of Hanzo Technologies. Hanzo Health is live on the App Store with 350 users.">
+<link rel="canonical" href="{{site}}">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0A0A0B">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Quielo Rodriguez, iOS and identity engineer">
+<meta property="og:description" content="Founder of Hanzo. Hanzo Health is live on the App Store with 350 users.">
+<meta property="og:url" content="{{site}}">
+<meta property="og:image" content="{{site}}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quielo Rodriguez, iOS and identity engineer, Vancouver">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quielo Rodriguez, iOS and identity engineer">
+<meta name="twitter:description" content="Founder of Hanzo. Hanzo Health is live on the App Store with 350 users.">
+<meta name="twitter:image" content="{{site}}og.png">
+<link rel="preload" href="fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{{jsonld}}</script>
+<style>{{css}}</style>
+</head>
+<body>
+<header class="site-header">
+<nav class="wrap" aria-label="Primary">
+<a class="brand" href="#top">Quielo Rodriguez</a>
+<div class="nav-links">
+<a href="#work">Work</a>
+<a href="#examples">Examples</a>
+<a href="#activity">Activity</a>
+<a href="#contact">Contact</a>
+<button class="theme-toggle" type="button" aria-label="Switch color theme" hidden>
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/></svg>
+</button>
+</div>
+</nav>
+</header>
+
+<main id="top">
+
+<section class="wrap hero" aria-labelledby="hero-name">
+<p class="eyebrow">Vancouver, BC · iOS and identity engineer · Founder, Hanzo Technologies</p>
+<h1 id="hero-name">Quielo Rodriguez</h1>
+<div class="status-row">
+<span class="chip chip-live">Open to Work</span>
+<span>Open to iOS and identity engineering roles.</span>
+</div>
+<p class="lede">iOS and identity engineer. Founder, Hanzo Technologies. Current work: a health journal on the App Store, and a credential system in prototype.</p>
+<div class="actions">
+<a class="btn btn-ink" href="https://github.com/quielorodriguez">View my GitHub profile{{arrow}}</a>
+<a class="btn btn-line" href="https://hanzotechnologies.com">Visit hanzotechnologies.com{{arrow}}</a>
+</div>
+</section>
+
+<section id="work" class="wrap work" aria-labelledby="work-h">
+<h2 id="work-h" class="section-title">Work</h2>
+<p class="work-intro">Summaries are computed on-device. They have no business on a server.</p>
+<div class="tiles">
+
+<article class="tile tile-health" aria-labelledby="hh-h">
+<div class="since"><span class="chip chip-live">Live on the App Store</span><span>since April 2026</span></div>
+<div class="tile-head">
+<div>
+<h3 id="hh-h">Hanzo Health</h3>
+<p>A privacy-first wellness journal for iPhone, iPad and Apple Watch, built for people living with chronic conditions like PCOS and endometriosis.</p>
+</div>
+<p class="figure-stat"><b>350</b><span>users</span></p>
+</div>
+<dl class="facts">
+<div><dt>Model</dt><dd>Freemium</dd></div>
+<div><dt>Health data</dt><dd>HealthKit</dd></div>
+<div><dt>On the device</dt><dd>Summaries</dd></div>
+<div><dt>For appointments</dt><dd>Doctor reports</dd></div>
+<div><dt>Localization</dt><dd>Japanese</dd></div>
+</dl>
+<div class="tile-actions">
+{{appStoreLink}}<a class="btn btn-line btn-sm" href="https://github.com/quielorodriguez/hanzo-health-privacy">Read the privacy materials</a>
+</div>
+</article>
+
+<article class="tile tile-cred" aria-labelledby="cr-h">
+<span class="chip chip-prototype">Prototype, synthetic data only</span>
+<div>
+<h3 id="cr-h">Hanzo Digital Credential Infrastructure</h3>
+<p>Work-authorization credentials held on the person's own device. Issued over OpenID4VCI, presented over OpenID4VP, encoded as ISO mdoc, anchored in X.509 PKI.</p>
+</div>
+<ul class="parts" aria-label="Parts">
+<li>Local issuer</li>
+<li>Issuance and lifecycle orchestration</li>
+<li>Holder demo</li>
+<li>Verifier with a trust registry</li>
+</ul>
+<p class="stat-inline"><b>660</b><span>synthetic tests, plus senior and security review</span></p>
+<p class="tile-note">A synthetic MVP and pilot foundation. It makes no production or government claims.</p>
+</article>
+
+</div>
+</section>
+
+<section id="examples" class="examples" aria-labelledby="ex-h">
+<div class="wrap">
+<h2 id="ex-h" class="section-title">Examples</h2>
+<p class="examples-intro">All illustrative. Fixed or mock data only.</p>
+
+<h3 class="lang">Swift, on the device</h3>
+
+<article class="ex ex-hr" aria-labelledby="ex1-h">
+<div class="ex-top">
+<span class="chip chip-illustrative">Illustrative · fixed sample value</span>
+<a class="ex-link" href="https://github.com/quielorodriguez/quielorodriguez/blob/main/examples/SampleHeartRateCard.swift">Read the file on GitHub</a>
+</div>
+<h4 id="ex1-h">Heart rate card</h4>
+<figure class="code">
+<div>
+<figcaption><span class="mono">examples/SampleHeartRateCard.swift</span><span>Swift, {{lines:hr}} lines</span></figcaption>
+<pre><code>{{code:hr}}</code></pre>
+</div>
+<div class="rendered" aria-label="Rendered output">
+<p>Rendered output</p>
+<div class="hr-card"><p>Synthetic heart rate</p><p>72 BPM</p></div>
+<p>VoiceOver: "Synthetic heart rate, 72 BPM"</p>
+</div>
+</figure>
+<div class="notes">
+<div class="note"><p>What it proves</p><p>Typed HealthKit units instead of loose doubles, and a SwiftUI view VoiceOver reads as one element instead of two fragments.</p></div>
+<div class="note"><p>What it does not do</p><p>No query, no permission prompt, no device read. 72 BPM is a constant.</p></div>
+</div>
+</article>
+
+<article class="ex ex-snap ex-split" aria-labelledby="ex3-h">
+<div class="main">
+<span class="chip chip-illustrative">Illustrative · sample values only</span>
+<h4 id="ex3-h">Weekly snapshot</h4>
+<p class="ex-why">Rewritten from scratch for this page. Inspired by the shared snapshot model Hanzo Health uses across the app, the Watch app and the widgets.</p>
+<figure class="code">
+<figcaption><span>Rewritten for this page</span><span>Swift, {{lines:snap}} lines</span></figcaption>
+<pre><code>{{code:snap}}</code></pre>
+</figure>
+</div>
+<aside>
+<div class="diagram" role="img" aria-label="One snapshot model shared by the iPhone app, the Apple Watch app and the widgets">
+<span class="root">DaySnapshot</span>
+<span class="stem"></span>
+<ul>
+<li><span>iPhone app</span></li>
+<li><span>Apple Watch app</span></li>
+<li><span>Widgets</span></li>
+</ul>
+<p>One model shape, no server in between</p>
+</div>
+<div class="note"><p>What it proves</p><p>Aggregation done on-device, in a model shape shareable across targets, with no server involved.</p></div>
+<div class="note"><p>What it does not do</p><p>No HealthKit query, no network, sample values only.</p></div>
+</aside>
+</article>
+
+<h3 class="lang">TypeScript, on the identity side</h3>
+
+<article class="ex ex-pre ex-split" aria-labelledby="ex2-h">
+<div class="side">
+<span class="chip chip-illustrative">Illustrative · mock signature result</span>
+<h4 id="ex2-h">Credential precheck</h4>
+<div class="note"><p>What it proves</p><p>The four gates a verifier passes before trusting anything: signature, trusted issuer, an expiry that actually parses, then the clock. The clock is injectable, so the check is testable.</p></div>
+<div class="note"><p>What it does not do</p><p>No cryptography. The mock flag stands in for the real check. The issuer sits on <code>.invalid</code>, a domain reserved so it never resolves.</p></div>
+<a class="ex-link" href="https://github.com/quielorodriguez/quielorodriguez/blob/main/examples/demo-credential-precheck.ts">Read the file on GitHub</a>
+</div>
+<figure class="code">
+<figcaption><span class="mono">examples/demo-credential-precheck.ts</span><span>TypeScript, {{lines:pre}} lines</span></figcaption>
+<pre><code>{{code:pre}}</code></pre>
+<div class="console"><span>Console output</span><span class="mono">true</span></div>
+</figure>
+</article>
+
+<article class="ex ex-gate" aria-labelledby="ex4-h">
+<header>
+<span class="chip chip-illustrative">Illustrative · every check is a stand-in</span>
+<h4 id="ex4-h">Verifier gates</h4>
+<p class="ex-why">Rewritten from scratch for this page. Inspired by the verifier service in the credential work, which enforces its checks in a fixed order.</p>
+</header>
+<ol class="gates" aria-label="Gate order">
+<li><p>Gate 1</p><p>Purpose</p><p>"purpose not allowed"</p></li>
+<li><p>Gate 2</p><p>Nonce</p><p>"nonce already used"</p></li>
+<li><p>Gate 3</p><p>Issuer</p><p>"issuer not trusted"</p></li>
+<li><p>Gate 4</p><p>Revocation</p><p>"credential revoked"</p></li>
+<li><p>Gate 5</p><p>Disclosure</p><p>"requested field not disclosable"</p></li>
+</ol>
+<figure class="code">
+<figcaption><span>Rewritten for this page</span><span>TypeScript, {{lines:gate}} lines</span></figcaption>
+<pre><code>{{code:gate}}</code></pre>
+</figure>
+<div class="notes">
+<div class="note"><p>What it proves</p><p>Fail-fast ordered verification, purpose binding, replay protection via a single-use nonce, revocation handling, and minimal disclosure.</p></div>
+<div class="note"><p>What it does not do</p><p>No cryptography, no real issuer, no real credential format. Every check is a stand-in.</p></div>
+</div>
+</article>
+
+<article class="ex ex-life ex-split" aria-labelledby="ex5-h">
+<div class="main">
+<span class="chip chip-illustrative">Illustrative · not the real lifecycle engine</span>
+<h4 id="ex5-h">Lifecycle transitions</h4>
+<p class="ex-why">Rewritten from scratch for this page. Inspired by the issuance and lifecycle orchestration in the credential work.</p>
+<div class="scroll">
+<table>
+<caption>Allowed transitions, from row to column</caption>
+<thead><tr><th scope="col">from \ to</th><th scope="col">issued</th><th scope="col">suspended</th><th scope="col">revoked</th><th scope="col">expired</th></tr></thead>
+<tbody>
+<tr><th scope="row">issued</th><td><span>no</span></td><td><span class="yes">yes</span></td><td><span class="yes">yes</span></td><td><span class="yes">yes</span></td></tr>
+<tr><th scope="row">suspended</th><td><span class="yes">yes</span></td><td><span>no</span></td><td><span class="yes">yes</span></td><td><span class="yes">yes</span></td></tr>
+<tr><th scope="row">revoked</th><td><span>no</span></td><td><span>no</span></td><td><span>no</span></td><td><span>no</span></td></tr>
+<tr><th scope="row">expired</th><td><span>no</span></td><td><span>no</span></td><td><span>no</span></td><td><span>no</span></td></tr>
+</tbody>
+</table>
+</div>
+<div class="stack">
+<div class="note"><p>What it proves</p><p>Domain modeling with fail-closed terminal states. Revoked and expired have no exits.</p></div>
+<div class="note"><p>What it does not do</p><p>Not the real lifecycle engine, no persistence, no real events.</p></div>
+</div>
+</div>
+<figure class="code">
+<figcaption><span>Rewritten for this page</span><span>TypeScript, {{lines:life}} lines</span></figcaption>
+<pre><code>{{code:life}}</code></pre>
+</figure>
+</article>
+
+</div>
+</section>
+
+<section id="activity" class="wrap activity" aria-labelledby="act-h">
+<h2 id="act-h" class="section-title">Activity</h2>
+<figure>
+{{calendar}}
+<figcaption>
+<span>{{total}}Counts only. No repo names, no commit messages.</span>
+<span class="legend" aria-hidden="true">Less<i></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i>More</span>
+</figcaption>
+</figure>
+</section>
+
+<section class="stack-list" aria-label="Stack">
+<dl class="wrap">
+<div><dt>Apple platforms</dt><dd>Swift, SwiftUI, HealthKit, Xcode</dd></div>
+<div><dt>Identity standards</dt><dd>OpenID4VCI, OpenID4VP, ISO mdoc, X.509</dd></div>
+<div><dt>Server and tooling</dt><dd>Node.js, TypeScript, Git</dd></div>
+</dl>
+</section>
+
+<section class="side-projects" aria-labelledby="side-h">
+<div class="wrap">
+<h2 id="side-h">Side projects</h2>
+<p>Surf-Tracker (Swift), Regimen (Swift), Calyra, plus a fitness app and a rabbit tracker from earlier experiments. Some archived, all part of learning to ship.</p>
+</div>
+</section>
+
+<section id="contact" class="wrap contact" aria-labelledby="ct-h">
+<h2 id="ct-h" class="section-title">Contact</h2>
+<div class="contact-body">
+<div>
+<p>Open to iOS and identity engineering roles. Based in Vancouver. Fastest contact: GitHub. Private Hanzo code walkthroughs available under NDA.</p>
+<p class="now"><b>Now:</b> shipping the next Hanzo Health update; looking for an iOS or identity role in Vancouver.</p>
+</div>
+<div class="contact-links">
+<a class="btn btn-ink" href="https://github.com/quielorodriguez">Find me on GitHub{{arrow}}</a>
+<a class="btn btn-line" href="https://hanzotechnologies.com">Visit hanzotechnologies.com{{arrow}}</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<span>© 2026 Quielo Rodriguez</span>
+<span>A static page on GitHub Pages. No cookies, no trackers.</span>
+</div>
+</footer>
+
+<script>{{js}}</script>
+</body>
+</html>
