@@ -248,7 +248,8 @@ td .yes { border-radius: 6px; background: var(--ink); color: var(--on-ink); font
 
 /* Stack, side projects, contact */
 .stack-list { border-top: 1px solid var(--line); }
-.stack-list dl { padding-top: 56px; padding-bottom: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 48px; }
+.stack-list .wrap { padding-top: clamp(80px, 9vw, 112px); padding-bottom: clamp(80px, 9vw, 112px); }
+.stack-list dl { margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 48px; }
 .stack-list dt { font-size: 14px; color: var(--text3); }
 .stack-list dd { margin-top: 10px; font-size: 22px; line-height: 1.5; letter-spacing: -0.01em; }
 .side-projects { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
